@@ -1,0 +1,28 @@
+<div *ngIf="currentProduct" class="edit-form">
+    <h4>Edit or Delete Pizza Item</h4>
+    <form>
+        <div class="form-group">
+            <label for="title">Name</label>
+            <input type="text" class="form-control" id="name" [(ngModel)]="currentProduct.name" name="name" />
+        </div>
+        <div class="form-group">
+            <label for="discription">Pizza Ingredirents</label>
+            <input type="text" class="form-control" id="discription" [(ngModel)]="currentProduct.discription" name="discription" />
+        </div>
+        <div class="form-group">
+            <label for="discription">Price</label>
+            <input type="text" class="form-control" id="discription" [(ngModel)]="currentProduct.price" name="price" />
+        </div>
+        <button class="btn btn-primary btn-danger badge badge-danger" (click)="deleteProduct()">
+    Delete
+  </button>
+
+        <button type="submit" class="btn btn-primary badge badge-success" (click)="updateProduct()">
+    Update
+  </button>
+        <p>{{ message }}</p>
+
+        <div *ngIf="!currentProduct">
+            <br />
+            <p>Cannot access this Pizza item...</p>
+        </div>
