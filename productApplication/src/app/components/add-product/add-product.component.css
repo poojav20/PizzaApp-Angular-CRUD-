@@ -1,0 +1,33 @@
+.submit-form {
+    max-width: 700px;
+    height: 100%;
+    margin: auto;
+    height: 100%;
+    align-items: center;
+    font-size: 15px;
+    font-family: Geneva, Verdana, sans-serif;
+}
+
+input {
+    display: block;
+    width: 70%;
+    height: 40px;
+    border-radius: 7px;
+    font-family: Geneva, Verdana, sans-serif;
+    border: solid 2px #1b2f44;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+button {
+    display: inline-block;
+    background: #1b2f44;
+    color: white;
+    text-decoration: currentColor;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: dodgerblue;
+}
